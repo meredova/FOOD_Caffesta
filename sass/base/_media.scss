@@ -1,0 +1,108 @@
+
+@media (max-width:1680px){
+    html {
+        font-size: 56%;
+    }
+    .container {
+        padding: 0 6rem;
+    }
+}
+@media (max-width:1366px){
+    html {
+        font-size: 40%;
+    }
+}
+@media (max-width:1280px){
+    html {
+        font-size: 40%;
+    }
+    .container {
+        padding: 0 4rem;
+    }
+    .header__wrapper {
+        margin-top: 2rem;
+    }
+}
+@media (max-width : 1024px) {
+    html {
+        font-size: 35%;
+    }
+}
+@media (max-width : 991px) {
+    .header {
+        nav {
+            display: none;
+        }
+    }
+    #burger {
+        display: flex;
+    }
+    .slider__slide__content {
+        flex-direction: column;
+    }
+    #slide {
+        width: auto;
+    }
+    footer {
+        .footer {
+            &__wrapper {
+                flex-direction: column;
+                align-items: center;
+                gap: 2rem;
+            }
+            &__socials {
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+                align-items: center;
+                &__slogan {
+                    display: none;
+                }
+            }
+            &__nav {
+                flex-direction: row;
+                min-height: auto;
+            }
+            &__news {
+                align-items: center; 
+            }
+        }  
+    }
+}
+@media (max-width: 533px) {
+    html {
+        font-size: 30%;
+    }
+    .header {
+        button {
+            width: auto;
+            img {
+                display: none;
+            }
+        }
+    }
+    .blog {
+        .slider__slide {
+            img {
+                width: 50%;
+            }
+        }
+        
+    }
+    .footer {
+        &__wrapper {
+            width: 80%; 
+        }
+        &__socials {
+            flex-direction: column;
+            &__logo__title {
+                &::before {
+                    transform: scale(.7);
+                }
+            }
+            &__header {
+                display: none;
+            }
+        } 
+    }
+}

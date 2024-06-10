@@ -1,0 +1,43 @@
+.teste {
+    &__wrapper {
+        margin-top: 7.6rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(10rem, 58rem));
+        grid-template-rows: repeat(2, minmax(14rem, auto));
+        max-width: calc(3 * 61rem + 2 * 1rem); 
+        grid-row-gap: 6rem;
+        justify-content: center;
+    }
+    &__item {
+        display: flex;
+        gap: 2rem;
+        padding: 2rem;
+        padding-right: 0;
+        img {
+            object-fit: none;
+        }
+        &_active {
+            color: #FFF;
+            background-color: $teste_recipes_blog_color;
+            border-radius: .5rem;
+        }
+        &__title {
+            font-weight: 500;
+            font-size: 4.8rem;
+            line-height: 6.2rem;
+        }
+        &__subtitle {
+            font-weight: 400;
+            font-size: 3.1rem;
+            line-height: 4.2rem;
+        }
+    }
+    .section-title {
+        &:first-child {
+            &::before {
+                width: 0;
+            }
+        }
+    }
+}
+  

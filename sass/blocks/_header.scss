@@ -1,0 +1,72 @@
+.header {
+    width: 100vw;
+    margin-bottom: 3rem;
+    &__logo {
+        width: 14rem;
+    }
+    &__wrapper {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: clamp(6rem, 6rem, 1rem);
+        flex-wrap: wrap;
+    }
+    &__contact {
+        width: 9rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 3rem;
+    }
+    &__button {
+        @include button_call;
+    }
+    &__burger {
+        width: 8rem;
+        height: 8rem;
+        border: .5rem solid $header_footer_main_color;
+        border-radius: 50%;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        span {
+            width: 70%;
+            height: 5%;
+            background-color: $header_footer_main_color;
+        }
+        
+    }
+}
+.nav {
+    display: flex;
+    width: 72rem;
+    justify-content: space-between;
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        &_title {
+            font-family: "Playfair Display", serif;
+            font-size: 3.2rem;
+            color: rgba(121, 117, 117, 1);
+            text-transform: capitalize;
+        }
+        a {
+            img {
+                width: clamp(2rem, 100%, 100%);
+            }
+        }
+    }
+    
+}
+

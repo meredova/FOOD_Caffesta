@@ -1,0 +1,103 @@
+.footer {
+    min-height: 77.8rem;
+    background-color: $header_footer_main_color;
+    
+    &__wrapper {
+        margin-top: 32.3rem;
+        display: flex;
+        width: 152rem;
+        max-width: 100%;
+        justify-content: space-between;
+        align-items: end;
+        margin-bottom: 13.8rem;
+    }
+    &__socials {
+        &__logo__title {
+            position: relative;
+            font-family: 'Playfair Display';
+            font-weight: 500;
+            font-size: 12.8rem;
+            line-height: 17.1rem;
+            color: $h1_logo_color;
+            &::before {
+                content: url(../../assets/icons/footer/footer_logo_hat.svg);
+                position: absolute;
+                max-width: 23rem;
+                bottom: 25%;
+                left: -21%;
+            }
+        }
+        &__slogan {
+            font-family: 'Playfair Display';
+            font-weight: 400;
+            font-size: 3.6rem;
+            line-height: 4.8rem;
+            color: #FFFFFF;
+            max-width: 52.3rem;  
+        }
+        &__header {
+            margin-top: 5.5rem;
+            font-weight: 500;
+            font-size: 4rem;
+            line-height: 5.2rem;
+            color: #FFFFFF;
+        }
+        &__icons {
+            margin-top: 3rem;
+            display: flex;
+            gap: 3rem;
+            align-items: end;
+        }
+    }
+    &__nav {
+        display: flex;
+        flex-direction: column;
+        min-height: 30rem;
+        gap: 1.5rem;
+        font-weight: 500;
+        font-size: 3.6rem;
+        line-height: 4.7rem;
+        color: #F3EBE7;
+        a {
+            color: #F3EBE7;
+            text-decoration: none;
+            &:first-child {
+                color: #FFF;
+                font-weight: 700;
+            }
+            &:last-child {
+                margin-bottom: 3rem;
+            }
+        }
+    }
+    &__news {
+        display: flex;
+        flex-direction: column;
+        min-height: 33rem;
+        &__title {
+            margin-top: -1rem;
+            font-weight: 700;
+            font-size: 4rem;
+            line-height: 5.2rem;
+            color: #FFFFFF;
+
+        }
+        input {
+            margin-top: 1rem;
+            width: 46rem;
+            height: 6.2rem;
+            background: transparent;
+            border: .3rem solid #FFFFFF;
+            border-radius: .5rem;
+        }
+        &__button {
+            margin-top: 4.5rem;
+            @include button_send;
+        }
+        &__payment {
+            margin-top: 6rem;
+            display: flex;
+            gap: 4rem;
+        }
+    }
+}

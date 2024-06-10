@@ -1,0 +1,30 @@
+.main {
+    width: 100vw;
+    height: 77.1rem;
+    background-image: url(../../assets/backgrounds/main.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 4.4rem;
+    &__wrapper {
+        margin-top: 27.6rem;
+        width: 67rem;
+        display: flex;
+        align-items: center;
+        flex-flow: column;
+        align-self: end;
+    }
+    &__subtitle {
+        margin-top: 2.6rem;
+        font-size: 3.2rem;
+        line-height: 4.2rem;
+        text-align: center;
+    }
+    &__button {
+        margin: 0 auto;
+        margin-top: 6rem;
+        @include button;
+        background-color: #FF6B2C;
+        width: 28.9rem;
+        border-radius: 3rem;
+    }
+}

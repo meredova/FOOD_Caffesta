@@ -1,0 +1,66 @@
+.blog {
+    min-height: 87rem;
+}
+.slider {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin-bottom: 3rem;
+    &__dots {
+        margin-top: 1.5rem;
+        display: flex;
+        width: 10.5rem;
+        justify-content: space-between;
+    }
+    &__dot {
+        width: 2.5rem;
+        height: 2.5rem;
+        background-color: #D9D9D9;
+        border-radius: 50%;
+        &_active {
+            background-color: $teste_recipes_blog_color;
+        }
+    }
+    &__slide {
+        width: clamp(138rem, 138rem, 110rem);
+        display: flex;
+        flex-direction: column;
+        &__quote {
+            max-width: 6.7rem;
+            &_down {
+                align-self: end;
+                margin-right: 28rem;
+            }
+        }
+        &__content {
+            display: flex;
+            margin-left: 6.7rem;
+            align-items: center;
+            gap: 2rem;
+            img {
+                border-radius: 50%;
+                outline-offset: -.8rem;
+                outline: .8rem solid #F15E1F;
+            }
+        }
+    }
+    &__arrows {
+        position: absolute;
+        display: flex;
+        width: 91vw;
+        justify-content: space-between;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    // &__arrow {
+    //     bottom: -50%;
+    // }
+}
+.slide {
+    &__content {
+        &__subtitle {
+            font-size: 3.6rem;
+            letter-spacing: 0.1rem;
+        }
+    }
+}

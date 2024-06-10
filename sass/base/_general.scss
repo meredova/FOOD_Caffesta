@@ -1,0 +1,41 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10rem;
+}
+.title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 6.4rem;
+    line-height: 8.3rem;
+    color: $h1_logo_color;
+}
+.section-title {
+    position: relative;
+    margin-top: 3.3rem;
+    font-weight: 500;
+    font-size: 6.4rem;
+    line-height: 8.3rem;
+    &::before {
+        content: '';
+        position: absolute;
+        width: 74rem;
+        height: .4rem;
+        background: #D9D9D9;
+        bottom: 100%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-3.4rem);
+    }
+}
+.section-button_readMore {
+    margin-top: 10rem;
+    @include button_readMore;
+    margin-bottom: 4rem;
+}
+
+
+img {
+    display: block;
+    max-width: 100%;
+}

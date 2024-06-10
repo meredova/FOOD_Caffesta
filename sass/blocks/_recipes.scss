@@ -1,0 +1,9 @@
+.recipes {
+    min-height: 94rem;
+    &__wrapper {
+        margin-top: 8.3rem;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
